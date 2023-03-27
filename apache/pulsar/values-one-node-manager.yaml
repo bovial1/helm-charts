@@ -16,6 +16,13 @@
 # specific language governing permissions and limitations
 # under the License.
 #
+# Need latest pulsar manager due to incorrect path to initdb
+images:
+  pulsar_manager:
+    repository: apachepulsar/pulsar-manager
+    tag: latest
+    pullPolicy: IfNotPresent
+    hasCommand: false
 
 # disabled AntiAffinity
 affinity:
